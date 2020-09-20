@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700i,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\header&footer.css">
+    <link rel="stylesheet" href="css\calculator.css">
+    <link rel="stylesheet" href="css\Pidtrimka.css">
+    <script type="text/javascript" src="js\jquery.js"></script>
+    <script src="js\calc.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+        <span class="logo header__logo"><a href="index.html" class="header__logo--link">AutoHelper</a></span>
+        <nav class="header__nav">
+        <ul class="header__nav__list">
+            <li href="#!" class="header__nav__link">
+                <a href="" class="header__nav__link--item">Функції</a>
+                <ul class="submenu">
+                    <li><a  class="submenu__item" href="calculator.html">Калькулятор палива</a></li>
+                    <li><a  class="submenu__item" href="analizate.html">Облік витрат</a></li>
+                    <li><a  class="submenu__item" href="statistik.html">Статистика</a></li>
+                 </ul>
+            </li>
+            <li href="#!" class="header__nav__link"><a href="index.html" class="header__nav__link--item--none">Головна</a></li>
+            <li href="#!" class="header__nav__link"><a href="kontakts.html" class="header__nav__link--item--none">Контакти</a></li>
+            <li href="#!" class="header__nav__link"><a href="pidtrimka.html" class="header__nav__link--item--none">Підтримка</a></li>
+            <li href="#!" class="header__nav__link"><a href="" class="header__nav__link--item--none">Ціни</a></li>
+        </ul>
+        </nav>
+        <div class="buttons">
+            <span class="user-name"></span>
+            <button class="button button-primary button-auth">
+                <span class="button-auth-svg"></span>
+                <span class="button-text">Войти</span>
+            </button>
+            <button class="button button-primary button-out">
+                <span class="button-text">Выйти</span>
+                <span class="button-out-svg"></span>
+            </button>
+        </div>
+    </div>
+    </header>
+
+    <form class="decor">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="form-inner">
+        <h3>Написати нам</h3>
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Повідомлення..." rows="3"></textarea>
+        <input type="submit" value="Відправити">
+      </div>
+    </form>
+
+    <div class="modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+			<button class="close-auth">&times;</button>
+			<form id="logInForm">
+				<fieldset class="modal-body">
+					<legend class="modal-title">Авторизация</legend>
+					<label class="label-auth">
+						<span>Логин</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Пароль</span>
+						<input id="password" type="password">
+					</label>
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button button-primary button-login" type="submit">Войти</button>
+					</div>
+				</div>
+			</form>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+    </div>
+    <script src="js\login.js"></script>
+</body>
+</html>

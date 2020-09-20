@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\statistik.css">
+    <script>
+        window.devicePixelRatio = 4;
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+        <span class="logo header__logo"><a href="index.html" class="header__logo--link">AutoHelper</a></span>
+        <nav class="header__nav">
+        <ul class="header__nav__list">
+            <li href="#!" class="header__nav__link">
+                <a href="" class="header__nav__link--item">Функції</a>
+                <ul class="submenu">
+                    <li><a  class="submenu__item" href="calculator.html">Калькулятор палива</a></li>
+                    <li><a  class="submenu__item" href="analizate.html">Облік витрат</a></li>
+                    <li><a  class="submenu__item" href="statistik.html">Статистика</a></li>
+                 </ul>
+            </li>
+            <li href="#!" class="header__nav__link"><a href="index.html" class="header__nav__link--item--none">Головна</a></li>
+            <li href="#!" class="header__nav__link"><a href="kontakts.html" class="header__nav__link--item--none">Контакти</a></li>
+            <li href="#!" class="header__nav__link"><a href="pidtrimka.html" class="header__nav__link--item--none">Підтримка</a></li>
+            <li href="#!" class="header__nav__link"><a href="" class="header__nav__link--item--none">Ціни</a></li>
+        </ul>
+        </nav>
+        <div class="buttons">
+            <span class="user-name"></span>
+            <button class="button button-primary button-auth">
+                <span class="button-auth-svg"></span>
+                <span class="button-text">Ввійти</span>
+            </button>
+            <button class="button button-primary button-out">
+                <span class="button-text">Вийти</span>
+                <span class="button-out-svg"></span>
+            </button>
+        </div>
+    </div>
+    </header>
+    <section class="statistik__section">
+      <div class="wrapper">
+        <div class="statistik__wrap">
+            <h1 class="statistik__title">Бортовий помічник</h1>
+            <div class="statistik__input__wrap">
+                <div class="input__area">
+                    <span class="input__title">Пробіг в минулому місяці(км):</span>
+                    <input type="number" name="car_run_lastmonth" id="car_run_lastmonth">
+                </div>
+                <div class="input__area">
+                    <span class="input__title">Средній пробіг в місяць (км):</span>
+                    <input type="number" name="car_run_month_midle" id="car_run_month_midle">
+                </div>
+                <div class="input__area">
+                    <span class="input__title">Пробіг цього місяця (км):</span>
+                    <input type="number" name="car_run_nowmonth" id="car_run_nowmonth">
+                </div>
+                <div class="input__area">
+                    <span class="input__title">Об'єм двигуна (л):</span>
+                    <input id="jq_car_engine" type="number" name="car_volume_engine">
+                </div>
+                <div class="input__area">
+                    <span class="input__title">Скільки місяців назад ви проводили техобслуговування:</span>
+                    <input type="number" name="when_car_rem" id="when_car_rem">
+                </div>
+                <div class="input__area">
+                    <span class="input__title">Витрата палива на 100км:</span>
+                    <input id="fuel__consumption" type="number" name="fuel__consumption">
+                </div>
+                <div class="input__area">
+                    <span class="input__title">Ціна палива (грн):</span>
+                    <input type="number" name="fuel__cost" id="fuel__cost">
+                </div>
+
+                <div class="input__area">
+                    <span class="input__title">Рік випуску авто</span>
+                    <input type="number" name="when_car_buy" id="when_car_buy">
+                </div>
+                <div class="input__area">
+                    <span class="input__title">Скільки місяців тому ви придбали шини:</span>
+                    <input type="number" name="when_wheels_buy" id="when_wheels_buy">
+                </div>
+
+            </div>
+            <span class="watch__statistik">Показати статистику</span>
+        </div>
+    </div>
+    </section>
+    <section class="statistik__section statistik__section_second">
+        <div class="wrapper">
+            <div class="charts">
+                <h1 class="chars__title">Графіки та інше</h1>
+                <div class="chars__wrap">
+                    <div class="chart__item">
+                        <canvas id="carrunchart" width="800" height="400"></canvas>
+                    </div>
+                    <div class="chart__item">
+                        <canvas id="fuelcostchart"  width="800" height="400"></canvas>
+                    </div>
+                    <div class="chart__item">
+                        <canvas id="fuelcons"  width="800" height="400"></canvas>
+                    </div>
+                    <div class="chart__item">
+                        <canvas id="carVchart"  width="800" height="400"></canvas>
+                    </div>
+                    <div class="coments">
+                    <h2 class="coments__title">Поради</h2>
+                    <div class="coments__wrap">
+                        <div class="coments__item coments__item__first">
+                            <div class="coment coment__first"></div>
+                        </div>
+                        <div class="coments__item coments__item__second ">
+                            <div class="coment coment__second"></div>
+                        </div>
+                        <div class="coments__item coments__item__third">
+                            <div class="coment coment__third"></div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="box">
+            <div class="footer-section left">
+                <p class="footer__list-title">Популярні марки</p>
+                <ul>
+                    <li><a href="#!">Toyota (16620)</a></li>
+                    <li><a href="#!">ВАЗ (Lada) (16370)</a></li>
+                    <li><a href="#!">Volkswagen (10110)</a></li>
+                    <li><a href="#!">Hyundai (8809)</a></li>
+                    <li><a href="#!">Ford (8502)</a></li>
+                    <li><a href="#!">Kia (8413)</a></li>
+                    <li><a href="#!">Nissan (8361)</a></li>
+                    <li><a href="#!">Renault (7370)</a></li>
+                    <li><a href="#!">Mitsubishi (7124)</a></li>
+                    <li><a href="#!">Chevrolet (7028)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section left">
+                <p class="footer__list-title">Популярні моделі</p>
+                <ul>
+                    <li><a href="#!">Ford Focus (3661)</a></li>
+                    <li><a href="#!">Skoda Octavia (2649)</a></li>
+                    <li><a href="#!">Opel Astra (2481)</a></li>
+                    <li><a href="#!">Volkswagen Passat (2473)</a></li>
+                    <li><a href="#!">Kia Rio (2384)</a></li>
+                    <li><a href="#!">Toyota Corolla (2253)</a></li>
+                    <li><a href="#!">Mitsubishi Lancer (2216)</a></li>
+                    <li><a href="#!">Daewoo Lanos (2186)</a></li>
+                    <li><a href="#!">Volkswagen Golf (2072)</a></li>
+                    <li><a href="#!">ВАЗ (Lada) Kalina (2062)</a></li>
+                </ul>
+            </div>
+            <div class="footer-section left">
+                <p class="footer__list-title">Розділи</p>
+                <ul class="footer-section-dop">
+                    <li><a href="#!">Люди</a></li>
+                    <li><a href="#!">Гаражі</a></li>
+                    <li><a href="#!">Каталог автомобілів</a></li>
+                    <li><a href="#!">Технічні характеристики</a></li>
+                    <li><a href="#!">Фото автомобілів</a></li>
+                    <li><a href="#!">Авто-журнал</a></li>
+                    <li><a href="#!">Відгуки</a></li>
+                    <li><a href="#!">Порівняння автомобілів</a></li>
+                    <li><a href="#!">Затрата палива автомобілів</a></li>
+                </ul>
+            </div>
+            <div class="footer-section left last">
+                <p class="footer__list-title">AutoHelper</p>
+                <ul class="footer-section-dop">
+                    <li><a href="#!">Головна</a></li>
+                    <li><a href="#!">Про проєкт</a></li>
+                    <li><a href="#!">Регістрація</a></li>
+                    <li><a href="#!">З чого почати?</a></li>
+                    <li><a href="#!">Партнерська программа</a></li>
+                    <li><a href="#!">Мобільний додаток</a></li>
+                    <li><a href="#!">Правила</a></li>
+                    <li><a href="#!">Блог</a></li>
+                    <li><a href="#!">Контакти</a></li>
+                    <li><a href="#!">Підтримати проєкт</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+			<button class="close-auth">&times;</button>
+			<form id="logInForm">
+				<fieldset class="modal-body">
+					<legend class="modal-title">Авторизація</legend>
+					<label class="label-auth">
+						<span>Логін</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Пароль</span>
+						<input id="password" type="password">
+					</label>
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button button-primary button-login" type="submit">Ввійти</button>
+					</div>
+				</div>
+			</form>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+    </div>
+    <script src="js\login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="js\statistik.js"></script>
+</body>
+</html>

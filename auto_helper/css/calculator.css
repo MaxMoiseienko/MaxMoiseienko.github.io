@@ -1,0 +1,219 @@
+
+*{
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    color: #000000;
+}
+.registration{
+    background: url(../img/backgrounds/calc-bg5.jpg) no-repeat center fixed ;
+    background-size: cover;
+    font-weight: 700;
+}
+.all {
+    position: relative;
+    background-color: #fafafa;
+    padding: 0px 0px 10px 0px;
+}
+.all .main:first-child {
+    width: 992px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.main {
+    width: 100%;
+
+}
+.whitebox-midd, .whitebox2-midd {
+    position: relative;
+}
+.all .holder:first-child {
+    min-height: 0 !important;
+}
+.all .holder:first-child {
+    min-height: 1050px;
+}
+.holder {
+    margin-bottom: 15px;
+}
+element.style {
+    background-color: #FFF;
+}
+#step2 .blue {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    padding-top: 45px;
+    height: 400px;
+}
+#step2 .blue {
+    background: #eaf4ff;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    height: 439px;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    color:#000000;
+    text-shadow: 1px 1px 2px rgb(230, 127, 9), 0 0 1em #ff6600;
+    font-weight: 900;
+    font-size: 70px;
+    margin: 0;
+}
+#step2 .inp-area {
+    margin-bottom: 20px;
+}
+.inp-area {
+    display: flex;
+    justify-content: flex-start;
+  
+}
+.inp-area .field-text {
+    position: relative;
+    float: left;
+    width: 300px;
+    font-size: 18px;
+    font-family: arial;
+    margin-top: 10px;
+}
+
+.inp-area .field-inp {
+    width: 260px;
+}
+.inp-area .field-inp {
+    position: relative;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.inp-area .hldr, .field-inp .hldr {
+    border: 1px solid #bbb9b9;
+    padding: 2px;
+    background-color: #FFFFFF;
+}
+.short-field-inp input {
+    width: 177px;
+}
+
+.hldr input {
+    outline: none;
+    height: 36px;
+    font-size: 18px;
+    font-family: verdana;
+    padding: 0px 13px;
+    width: 228px;
+    font-family: Verdana;
+    font-size: 16px;
+    color: #484848;
+}
+.field-inp input, .field-inp select {
+    display: block;
+    border: none;
+    width: 90%;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    
+}
+
+input, select {
+    font-family: Arial;
+    font-size: 12px;
+}
+.short-field-inp p {
+    float: right;
+    margin-right: 7px;
+    margin-top: -29px;
+}
+a.greenbut-sm {
+    display: block;
+    float: left;
+    font-family: Arial;
+    font-weight: bold;
+    background: url() 100% 0px no-repeat;
+    font-size: 13px;
+    color: #FFF;
+    text-shadow: 1px 1px #79981a;
+    padding-right: 3px;
+    line-height: 24px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.main a {
+    color: #1163b8;
+    text-decoration: underline;
+}
+.left, .l {
+    position: relative;
+    float: left !important;
+}
+.clear {
+    clear: both;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+ #results {
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+} 
+.results{
+    display: flex;
+    flex-direction: row;
+
+}
+div.calc-text p {
+    text-align: justify;
+}
+.inp-area .hldr, .field-inp .hldr {
+    position: relative;
+    border: 1px solid #bbb9b9;
+    padding: 2px;
+    background-color: #FFFFFF;
+}
+
+a.greenbut-sm span {
+    display: block;
+    color: #FFF !important;
+    text-decoration: none;
+    float: left;
+    height: 25px;
+    background: chartreuse 0px 0px no-repeat;
+    padding: 0px 12px 0px 15px;
+    font-size: 13px !important;
+    color: #FFF !important;
+}
+.blue{
+   background-color:  rgba(250, 171, 24, 0.918);
+}
+.calc-text{
+    background-color: rgba(250, 171, 24, 0.918); border: none; border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.inp-area-results{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 0;
+    width: 300px;
+    height: 70px;
+    background-color: lawngreen;
+    border: solid 2px #1890FF;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding: 8px 16px;
+}
+.inp-area-results .field-text{
+    margin-top: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш бортовий помічник</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,800&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700i,900i&display=swap&subset=cyrillic" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css\owl.carousel.min.css">
+     <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+        <span class="logo header__logo"><a href="index.html" class="header__logo--link">AutoHelper</a></span>
+        <nav class="header__nav">
+        <ul class="header__nav__list">
+            <li href="#!" class="header__nav__link">
+                <a href="" class="header__nav__link--item">Функції</a>
+                <ul class="submenu">
+                    <li><a  class="submenu__item" href="calculator.html">Калькулятор палива</a></li>
+                    <li><a  class="submenu__item" href="analizate.html">Облік витрат</a></li>
+                    <li><a  class="submenu__item" href="statistik.html">Статистика</a></li>
+                 </ul>
+            </li>
+            <li href="#!" class="header__nav__link"><a href="index.html" class="header__nav__link--item--none">Головна</a></li>
+            <li href="#!" class="header__nav__link"><a href="kontakts.html" class="header__nav__link--item--none">Контакти</a></li>
+            <li href="#!" class="header__nav__link"><a href="pidtrimka.html" class="header__nav__link--item--none">Підтримка</a></li>
+            <li href="#!" class="header__nav__link"><a href="" class="header__nav__link--item--none">Ціни</a></li>
+        </ul>
+        </nav>
+        <div class="buttons">
+            <span class="user-name"></span>
+            <button class="button button-primary button-auth">
+                <span class="button-auth-svg"></span>
+                <span class="button-text">Ввійти</span>
+            </button>
+            <button class="button button-primary button-out">
+                <span class="button-text">Вийти</span>
+                <span class="button-out-svg"></span>
+            </button>
+        </div>
+    </div>
+    </header>
+    <main class="main">
+        <div class="wrapper main__wrapper">
+        <div class="hero">
+            <h1 class="hero__title">Бортовий помічник</h1>
+            <p class="hero__desc">
+                Журнал допомагає вести облік витрат на паливо, події, зо відбуваються з автомобілем, нагадує про технічне
+                обслуговування та інше. Узагальнює статистику та досвід експлуатації автомобіем.
+            </p>
+            <a href="#!" class="button__more">Докладніше</a>
+            <h2 class="hero__subtitle">Що ми пропонуємо?</h2>
+            <div class="hero__desc__second">
+
+                <a href="analizate.html"  class="desc--item">
+                    <img src="img\hero-icon\tab1.png" alt="hero-icon" class="desc--img">
+                    <p class="desc--text">
+                        Облік витрат на автомобіль
+                    </p>
+                </a>
+                <a  href="statistik.html" class="desc--item">
+                    <img src="img\hero-icon\tab2.png" alt="hero-icon" class="desc--img">
+                    <p class="desc--text">
+                        Аналіз і докладна статистика
+                    </p>
+                </a>
+                <a href="calculator.html" class="desc--item">
+                    <img src="img\hero-icon\tab3.png" alt="hero-icon" class="desc--img">
+                    <p class="desc--text">
+                        Контроль витрати палива
+                    </p>
+                </a>
+                <a href="#!" class="desc--item">
+                    <img src="img\hero-icon\tab4.png" alt="hero-icon" class="desc--img">
+                    <p class="desc--text">
+                        Графік технічного обслуговування
+                    </p>
+                </a>
+                <a href="models.html" class="desc--item">
+                    <img src="img\hero-icon\tab5.png" alt="hero-icon" class="desc--img">
+                    <p class="desc--text">
+                        Пошук і порівняння автомобілів
+                    </p>
+                </a>
+                <a href="#!" class="desc--item">
+                    <img src="img\hero-icon\tab6.png" alt="hero-icon" class="desc--img">
+                    <p class="desc--text">
+                        Обмін водійським досвідом
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    </main>
+    <div class="auto__section">
+
+        <div class="auto_section-bg-wrapper">
+        <div class="wrapper">
+            <h2 class="section__title">Моделі машин</h2>
+      <div class="slider owl-carousel">
+    <div class="slider__item">
+    <h3 class="slider__title">BMW X5</h3>
+    <figure class="slider__info">
+        <img class="slider__image" src="img\auto-carousel-img\x5.jpg" alt="auto--img">
+    </figure>
+        <div class="slider__func">
+            <a href="#!" class=" slider__func-link slider__func--models">Всі моделі авто</a>
+            <a href="#!" class=" slider__func-link slider__func--accounting">Облік подій</a>
+            <a href="#!" class="slider__func-link slider__func--statistics">Статистика витрат</a>
+            <a href="#!" class="slider__func-link slider__func--service">Технічні послуги</a>
+        </div>
+        <span class="button__join">
+            <a href="#!" class="join-item">Переглянути</a>
+        </span>
+    </div>
+    <div class="slider__item">
+        <h3 class="slider__title">BMW X3</h3>
+        <figure class="slider__info">
+            <img class="slider__image" src="img\auto-carousel-img\x3.jpg" alt="auto--img">
+        </figure>
+            <div class="slider__func">
+                <a href="#!" class=" slider__func-link slider__func--models">Всі моделі авто</a>
+                <a href="#!" class=" slider__func-link slider__func--accounting">Облік подій</a>
+                <a href="#!" class="slider__func-link slider__func--statistics">Статистика витрат</a>
+                <a href="#!" class="slider__func-link slider__func--service">Технічні послуги</a>
+            </div>
+            <span class="button__join">
+                <a href="#!" class="join-item">Переглянути</a>
+            </span>
+    </div>
+    <div class="slider__item">
+        <h3 class="slider__title">BMW X5 M</h3>
+        <figure class="slider__info">
+            <img class="slider__image" src="img\auto-carousel-img\x6m.jpg" alt="auto--img">
+        </figure>
+            <div class="slider__func">
+                <a href="#!" class=" slider__func-link slider__func--models">Всі моделі авто</a>
+                <a href="#!" class=" slider__func-link slider__func--accounting">Облік подій</a>
+                <a href="#!" class="slider__func-link slider__func--statistics">Статистика витрат</a>
+                <a href="#!" class="slider__func-link slider__func--service">Технічні послуги</a>
+            </div>
+            <span class="button__join">
+                <a href="#!" class="join-item">Переглянути</a>
+            </span>
+    </div>
+    <div class="slider__item">
+        <h3 class="slider__title">BMW X6</h3>
+        <figure class="slider__info">
+            <img class="slider__image" src="img\auto-carousel-img\x6.jpg" alt="auto--img">
+        </figure>
+            <div class="slider__func">
+                <a href="#!" class=" slider__func-link slider__func--models">Всі моделі авто</a>
+                <a href="#!" class=" slider__func-link slider__func--accounting">Облік подій</a>
+                <a href="#!" class="slider__func-link slider__func--statistics">Статистика витрат</a>
+                <a href="#!" class="slider__func-link slider__func--service">Технічні послуги</a>
+            </div>
+            <span class="button__join">
+                <a href="#!" class="join-item">Переглянути</a>
+            </span>
+    </div>
+    <div class="slider__item">
+        <h3 class="slider__title">BMW cерія 5</h3>
+        <figure class="slider__info">
+            <img class="slider__image" src="img\auto-carousel-img\5s.jpg" alt="auto--img">
+        </figure>
+            <div class="slider__func">
+                <a href="#!" class=" slider__func-link slider__func--models">Всі моделі авто</a>
+                <a href="#!" class=" slider__func-link slider__func--accounting">Облік подій</a>
+                <a href="#!" class="slider__func-link slider__func--statistics">Статистика витрат</a>
+                <a href="#!" class="slider__func-link slider__func--service">Технічні послуги</a>
+            </div>
+            <span class="button__join">
+                <a href="#!" class="join-item">Переглянути</a>
+            </span>
+    </div>
+    <div class="slider__item">
+        <h3 class="slider__title">BMW серія 7</h3>
+        <figure class="slider__info">
+            <img class="slider__image" src="img\auto-carousel-img\7s.jpg" alt="auto--img">
+        </figure>
+            <div class="slider__func">
+                <a href="#!" class=" slider__func-link slider__func--models">Всі моделі авто</a>
+                <a href="#!" class=" slider__func-link slider__func--accounting">Облік подій</a>
+                <a href="#!" class="slider__func-link slider__func--statistics">Статистика витрат</a>
+                <a href="#!" class="slider__func-link slider__func--service">Технічні послуги</a>
+            </div>
+            <span class="button__join">
+                <a href="#!" class="join-item">Переглянути</a>
+            </span>
+    </div>
+    <div class="slider__item">
+        <h3 class="slider__title">BMW X1</h3>
+        <figure class="slider__info">
+            <img class="slider__image" src="img\auto-carousel-img\x1.jpg" alt="auto--img">
+        </figure>
+            <div class="slider__func">
+                <a href="#!" class=" slider__func-link slider__func--models">Всі моделі авто</a>
+                <a href="#!" class=" slider__func-link slider__func--accounting">Облік подій</a>
+                <a href="#!" class="slider__func-link slider__func--statistics">Статистика витрат</a>
+                <a href="#!" class="slider__func-link slider__func--service">Технічні послуги</a>
+            </div>
+            <span class="button__join">
+                <a href="#!" class="join-item">Переглянути</a>
+            </span>
+    </div>
+    <div class="slider__item">
+        <h3 class="slider__title">BMW M3</h3>
+        <figure class="slider__info">
+            <img class="slider__image" src="img\auto-carousel-img\m3.jpg" alt="auto--img">
+        </figure>
+            <div class="slider__func">
+                <a href="#!" class=" slider__func-link slider__func--models">Всі моделі авто</a>
+                <a href="#!" class=" slider__func-link slider__func--accounting">Облік подій</a>
+                <a href="#!" class="slider__func-link slider__func--statistics">Статистика витрат</a>
+                <a href="#!" class="slider__func-link slider__func--service">Технічні послуги</a>
+            </div>
+            <span class="button__join">
+                <a href="#!" class="join-item">Переглянути</a>
+            </span>
+    </div>
+
+    <!--/slider__item-->
+</div>
+    </div>
+</div>
+    </div>
+    <section class="auto__models">
+    <div class="wrapper auto__models__wrapper">
+        <h2 class="section__title auto__models__section__title">Марки і моделі</h2>
+        <div class="auto__icons">
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\audi.svg" alt="auto__icon--img">
+                </div>
+            </a>
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\bmw.svg" alt="auto__icon--img">
+                </div>
+            </a>
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\ford.svg" alt="auto__icon--img">
+                </div>
+            </a>
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\hyundai.svg" alt="auto__icon--img">
+                </div>
+            </a>
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\kia.svg" alt="auto__icon--img">
+                </div>
+            </a>
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\lada.svg" alt="auto__icon--img">
+                </div>
+            </a>
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\mercedes.svg" alt="auto__icon--img">
+                </div>
+            </a>
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\mitsubishi.svg" alt="auto__icon--img">
+                </div>
+            </a>
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\renault.svg" alt="auto__icon--img">
+                </div>
+            </a>
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\toyota.svg" alt="auto__icon--img">
+                </div>
+            </a>
+            <a href="#!" class="auto__icon">
+                <div class="auto__card">
+                    <img class="auto__icon--img" src="img\markes\volkswagen.svg" alt="auto__icon--img">
+                </div>
+            </a>
+        </div>
+        <div class="auto__names">
+            <div class="auto__names__column1 auto__names__column">
+                <a href="#!" class="c-link c-link--white">Acura</a>
+                <a href="#!" class="c-link c-link--white">Alfa Romeo</a>
+                <a href="#!" class="c-link c-link--white">Audi</a>
+                <a href="#!" class="c-link c-link--white">BMW</a>
+                <a href= "#!"  class="c-link c-link--white">Cadillac</a>
+                <a href="#!" class="c-link c-link--white">Chery</a>
+                <a href="#!" class="c-link c-link--white">Chevrolet</a>
+                <a href="#!" class="c-link c-link--white">Chrysler</a>
+                <a href="#!" class="c-link c-link--white">Citroen</a>
+            </div>
+            <div class="auto__names__column2 auto__names__column">
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Dodge</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Ferrari</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">FIAT</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Ford</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Geely</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Honda</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Hummer</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Hyundai</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Infiniti</a>
+            </div>
+            <div class="auto__names__column3 auto__names__column">
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Jaguar</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Jeep</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">KIA</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Lamborghini</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Lancia</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Land Rover</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Lexus</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Maserati</a>
+                <a class="c-link c-link--white" href="#!" data-ym-target="main_guest_cars_brands">Mazda</a>
+            </div>
+            <div class="auto__names__column4 auto__names__column">
+                <a class="c-link c-link--white" href="/cars/mercedes/" data-ym-target="main_guest_cars_brands">Mercedes</a>
+                <a class="c-link c-link--white" href="/cars/mini/" data-ym-target="main_guest_cars_brands">MINI</a>
+                <a class="c-link c-link--white" href="/cars/mitsubishi/" data-ym-target="main_guest_cars_brands">Mitsubishi</a>
+                <a class="c-link c-link--white" href="/cars/nissan/" data-ym-target="main_guest_cars_brands">Nissan</a>
+                <a class="c-link c-link--white" href="/cars/opel/" data-ym-target="main_guest_cars_brands">Opel</a>
+                <a class="c-link c-link--white" href="/cars/peugeot/" data-ym-target="main_guest_cars_brands">Peugeot</a>
+                <a class="c-link c-link--white" href="/cars/pontiac/" data-ym-target="main_guest_cars_brands">Pontiac</a>
+                <a class="c-link c-link--white" href="/cars/porsche/" data-ym-target="main_guest_cars_brands">Porsche</a>
+                <a class="c-link c-link--white" href="/cars/renault/" data-ym-target="main_guest_cars_brands">Renault</a>
+            </div>
+            <div class="auto__names__column5 auto__names__column">
+                <a class="c-link c-link--white" href="/cars/saab/" data-ym-target="main_guest_cars_brands">Saab</a>
+                <a class="c-link c-link--white" href="/cars/scion/" data-ym-target="main_guest_cars_brands">Scion</a>
+                <a class="c-link c-link--white" href="/cars/seat/" data-ym-target="main_guest_cars_brands">SEAT</a>
+                <a class="c-link c-link--white" href="/cars/skoda/" data-ym-target="main_guest_cars_brands">Skoda</a>
+                <a class="c-link c-link--white" href="/cars/smart/" data-ym-target="main_guest_cars_brands">Smart</a>
+                <a class="c-link c-link--white" href="/cars/subaru/" data-ym-target="main_guest_cars_brands">Subaru</a>
+                <a class="c-link c-link--white" href="/cars/suzuki/" data-ym-target="main_guest_cars_brands">Suzuki</a>
+                <a class="c-link c-link--white" href="/cars/tesla/" data-ym-target="main_guest_cars_brands">Tesla</a>
+                <a class="c-link c-link--white" href="/cars/toyota/" data-ym-target="main_guest_cars_brands">Toyota</a>
+            </div>
+            <div class="auto__names__column6 auto__names__column">
+                <a class="c-link c-link--white" href="/cars/volkswagen/" data-ym-target="main_guest_cars_brands">Volkswagen</a>
+                <a class="c-link c-link--white" href="/cars/volvo/" data-ym-target="main_guest_cars_brands">Volvo</a>
+                <a class="c-link c-link--white" href="/cars/gaz/" data-ym-target="main_guest_cars_brands">ГАЗ</a>
+                <a class="c-link c-link--white" href="/cars/zaz/" data-ym-target="main_guest_cars_brands">ЗАЗ</a>
+                <a class="c-link c-link--white" href="/cars/lada/" data-ym-target="main_guest_cars_brands">Лада</a>
+                <a class="c-link c-link--white" href="/cars/luaz/" data-ym-target="main_guest_cars_brands">ЛуАЗ</a>
+                <a class="c-link c-link--white" href="/cars/uaz/" data-ym-target="main_guest_cars_brands">УАЗ</a>
+                <a class="c-link c-link--white" href="/cars/other/" data-ym-target="main_guest_cars_brands">Інші</a>
+                <a class="c-link c-link--white" href="/cars/selfmade/" data-ym-target="main_guest_cars_brands">Саморобки</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="companies">
+        <div class="wrapper companies__wrapper">
+        <h2 class="section__title companies__section__title">Компанії</h2>
+        <div class="companies__content">
+            <div class="companies__img">
+                <img src="img\carousel\carousel-icon.jpg" alt="companies">
+            </div>
+                <span class="companies__desc">
+                    Автосервіси і магазини з відгуками, блогами і <span class="companies__desc--special">спецумовами</span>
+                </span>
+               <a href="#!" class="choose__company--link">Підібрати компанію</a>
+        </div>
+    </div>
+    </section>
+    <section class="news">
+        <div class="wrapper news__wrapper">
+        <h2 class="section__title news__section__title">Новини і тест-драйви</h2>
+        <div class="news__content">
+        <div class="news__cards">
+            <figure class="news__card news__card_size_lg ">
+               <img src="img\news-img\5eb2a778ec05c41043000012.jpeg" alt="news__card"  class="news__card-pic news__card-pic_size_lg">
+               <figcaption class="news__card-title">
+                 Найдешевший Geely Coolray вийшов зовсім не&nbsp;пустий
+               </figcaption>
+               <a href="https://www.drive.ru/news/geely/5eb2a778ec05c4104300001e.html" class="news__card-link"></a>
+            </figure>
+            <figure class="news__card news__card_size_lg ">
+                <img src="img\news-img\5eb283f9ec05c49b6500001d.jpeg" alt="news__card"  class="news__card-pic news__card-pic_size_lg">
+                <figcaption class="news__card-title">
+                    Nissan запланував «відступ» на&nbsp;європейському ринку
+                </figcaption>
+                <a href="https://www.drive.ru/business/nissan/5eb283f9ec05c49b65000038.html" class="news__card-link"></a>
+             </figure>
+             <figure class="news__card news__card_size_sm ">
+                <img src="img\news-img\5eb28821ec05c47c1d000021.jpeg" alt="news__card"  class="news__card-pic news__card-pic_size_sm">
+                <figcaption class="news__card-title">
+                   «Другий» BMW Active Tourer замінить собою дві моделі
+                </figcaption>
+                <a href="https://www.drive.ru/spy/bmw/5eb28821ec05c47c1d00002e.html" class="news__card-link"></a>
+             </figure>
+             <figure class="news__card news__card_size_sm ">
+                <img src="img\news-img\5eb27d4fec05c4e15d00000e.jpeg" alt="news__card"  class="news__card-pic news__card-pic_size_sm">
+                <figcaption class="news__card-title">
+                    Кроссовер Manhart RQ 900 став флагманом німецького ателье
+                </figcaption>
+                <a href="https://www.drive.ru/tuning/audi/5eb27d4fec05c4e15d00002b.html" class="news__card-link"></a>
+             </figure>
+             <figure class="news__card news__card_size_sm ">
+                <img src="img\news-img\5eb26bedec05c4a96200002c.jpeg" alt="news__card"  class="news__card-pic news__card-pic_size_sm">
+                <figcaption class="news__card-title">
+                   Техніка: Правильно користуємося новітніми клімат-системами
+                </figcaption>
+                <a href="https://www.drive.ru/technic/5eb26b30ec05c4794c0000c3.html" class="news__card-link"></a>
+             </figure>
+        </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="box">
+            <div class="footer-section left">
+                <p class="footer__list-title">Популярні марки</p>
+                <ul>
+                    <li><a href="#!">Toyota</a></li>
+                    <li><a href="#!">ВАЗ (Lada)</a></li>
+                    <li><a href="#!">Volkswagen</a></li>
+                    <li><a href="#!">Hyundai</a></li>
+                    <li><a href="#!">Ford</a></li>
+                    <li><a href="#!">Kia</a></li>
+                    <li><a href="#!">Nissan</a></li>
+                    <li><a href="#!">Renault</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section left">
+                <p class="footer__list-title">Популярні моделі</p>
+                <ul>
+                    <li><a href="#!">Ford Focus</a></li>
+                    <li><a href="#!">Skoda Octavia</a></li>
+                    <li><a href="#!">Opel Astra</a></li>
+                    <li><a href="#!">Volkswagen Passat</a></li>
+                    <li><a href="#!">Kia Rio</a></li>
+                    <li><a href="#!">Toyota Corolla</a></li>
+                    <li><a href="#!">Mitsubishi Lancer</a></li>
+                    <li><a href="#!">Daewoo Lanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section left">
+                <p class="footer__list-title">Розділи</p>
+                <ul class="footer-section-dop">
+                    <li><a href="#!">Облік витрат</a></li>
+                    <li><a href="#!">Детальна татистика</a></li>
+                    <li><a href="#!">Каталог автомобілів</a></li>
+                    <li><a href="#!">Технічні характеристики</a></li>
+                    <li><a href="#!">Авто-журнал</a></li>
+                    <li><a href="#!">Відгуки</a></li>
+                    <li><a href="#!">Порівняння автомобілів</a></li>
+                    <li><a href="#!">Затрата палива автомобілів</a></li>
+                </ul>
+            </div>
+            <div class="footer-section left last">
+                <p class="footer__list-title">AutoHelper</p>
+                <ul class="footer-section-dop">
+                    <li><a href="#!">Головна</a></li>
+                    <li><a href="#!">Про проєкт</a></li>
+                    <li><a href="#!">Регістрація</a></li>
+                    <li><a href="#!">З чого почати?</a></li>
+                    <li><a href="#!">Правила</a></li>
+                    <li><a href="#!">Новини</a></li>
+                    <li><a href="#!">Контакти</a></li>
+                    <li><a href="#!">Підтримака</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+			<button class="close-auth">&times;</button>
+			<form id="logInForm">
+				<fieldset class="modal-body">
+					<legend class="modal-title">Авторизація</legend>
+					<label class="label-auth">
+						<span>Логін</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Пароль</span>
+						<input id="password" type="password">
+					</label>
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button button-primary button-login" type="submit">Ввійти</button>
+					</div>
+				</div>
+			</form>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js\owl.carousel.min.js"></script>
+    <script src="js\main.js"></script>
+</body>
+</html>

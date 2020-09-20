@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700i,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\header&footer.css">
+    <link rel="stylesheet" href="css\calculator.css">
+    <script type="text/javascript" src="js\jquery.js"></script>
+    <script src="js\calc.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+        <span class="logo header__logo"><a href="index.html" class="header__logo--link">AutoHelper</a></span>
+        <nav class="header__nav">
+        <ul class="header__nav__list">
+            <li href="#!" class="header__nav__link">
+                <a href="" class="header__nav__link--item">Функції</a>
+                <ul class="submenu">
+                    <li><a  class="submenu__item" href="calculator.html">Калькулятор палива</a></li>
+                    <li><a  class="submenu__item" href="analizate.html">Облік витрат</a></li>
+                    <li><a  class="submenu__item" href="statistik.html">Статистика</a></li>
+                 </ul>
+            </li>
+            <li href="#!" class="header__nav__link"><a href="index.html" class="header__nav__link--item--none">Головна</a></li>
+            <li href="#!" class="header__nav__link"><a href="kontakts.html" class="header__nav__link--item--none">Контакти</a></li>
+            <li href="#!" class="header__nav__link"><a href="pidtrimka.html" class="header__nav__link--item--none">Підтримка</a></li>
+            <li href="#!" class="header__nav__link"><a href="" class="header__nav__link--item--none">Ціни</a></li>
+        </ul>
+        </nav>
+        <div class="buttons">
+            <span class="user-name"></span>
+            <button class="button button-primary button-auth">
+                <span class="button-auth-svg"></span>
+                <span class="button-text">Войти</span>
+            </button>
+            <button class="button button-primary button-out">
+                <span class="button-text">Выйти</span>
+                <span class="button-out-svg"></span>
+            </button>
+        </div>
+    </div>
+    </header>
+    <div class="all registration">
+    <div class="main">
+    <h1>Калькулятор витрати палива автомобіля</h1><br>
+    <div class="whitebox-midd">
+            <div class="whitebox-l"><div class="whitebox-r">
+                <div class="whitebox-bg">
+                    <div class="holder">
+            	        <div id="step2">
+	                        <div class="blue" style="background-color: rgba(250, 171, 24, 0.918); border: none; border-radius: 10px;" >
+	                	        <div class="inp-area">
+						            <div class="field-text">Витрата палива:</div>
+						            <div class="field-inp short-field-inp">
+							            <div class="hldr">
+								            <input type="number" name="fuel_consumption">
+								                <p>(л/100 км)</p>
+							            </div>
+						            </div>
+						        </div>
+						        <div class="inp-area">
+						            <div class="field-text">Відстань:</div>
+						            <div class="field-inp short-field-inp">
+							            <div class="hldr">
+								            <input type="number" name="destination">
+								            <p>(км)</p>
+							            </div>
+						            </div>
+						        </div>
+						<div class="inp-area">
+						    <div class="field-text">Ціна палива:</div>
+						    <div class="field-inp short-field-inp">
+							    <div class="hldr">
+                                    <input type="number" name="fuel_cost">
+                                    <p>(грн)</p>
+							    </div>
+						    </div>
+						</div>
+						<div class="inp-area">
+						<div class="field-text">Сумма витрат для подорожі:</div>
+						<div class="field-inp short-field-inp">
+							<div class="hldr">
+                                <input type="number" name="summa">
+                                <p>(грн)</p>
+							</div>
+						</div>
+						</div>
+						<a class="greenbut-sm left" href="#nogo" id="calc"><span>Вирахувати</span></a>
+						<div class="clear"></div>
+						<div class="results" id="results" >
+						<div class="inp-area inp-area-results">
+						<div class="field-text">Витрата палива на <span class="destination"></span>км: <span class="fuel_consumption_res"></span>л</div>
+						</div>
+						<div class="inp-area inp-area-results">
+						<div class="field-text">Вартість подорожі на <span class="destination"></span>км: <span class="fuel_cost_res"></span><span class="currency">UAH</span></div>
+						</div>
+						<div class="inp-area inp-area-results">
+						<div class="field-text">За <span class="summa"></span><span class="currency">UAH </span>проїдете: <span class="destination_res"></span>км</div>
+						</div>
+						</div>
+                    </div>
+                </div>
+             </div>
+        </div>
+            </div>
+            </div>
+                   </div>
+        <div class="calc-text">
+            <p>Чи хочете ви витрачати на свій автомобіль менше? Відповідь на це питання, напевно, в більшості випадків у всіх буде однаковий. Так, так вже давно склалося, що велику частину бюджету багато сімей вкладають саме в автомобіль. Мало того, що потрібно купити саму машину, заплатив за неї чималу суму, так потрібно ще й постійно Слідкуйте за її технічним станом, відвідувати сервісні центри і регулярно заїжджати на заправні станції. Саме остання доводиться робити дуже часто.</p>
+            <!-- <p>Звичайно ж, починати потрібно з себе. Щоб не провокувати підвищену витрату, обов'язково зверніть увагу на стиль водіння. Найкраще пересуватися на середніх оборотах двигуна, і не їздити на підвищених обертах. Так само варто стежити за всім додатковим обладнанням. Якщо можна обійтися без його включення, обійдіть. Насправді, існує велика кількість інших способів зменшити витрату палива.</p> -->
+        </div>
+        <br>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="box">
+            <div class="footer-section left">
+                <p class="footer__list-title">Популярні марки</p>
+                <ul>
+                    <li><a href="#!">Toyota (16620)</a></li>
+                    <li><a href="#!">ВАЗ (Lada) (16370)</a></li>
+                    <li><a href="#!">Volkswagen (10110)</a></li>
+                    <li><a href="#!">Hyundai (8809)</a></li>
+                    <li><a href="#!">Ford (8502)</a></li>
+                    <li><a href="#!">Kia (8413)</a></li>
+                    <li><a href="#!">Nissan (8361)</a></li>
+                    <li><a href="#!">Renault (7370)</a></li>
+                    <li><a href="#!">Mitsubishi (7124)</a></li>
+                    <li><a href="#!">Chevrolet (7028)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section left">
+                <p class="footer__list-title">Популярні моделі</p>
+                <ul>
+                    <li><a href="#!">Ford Focus (3661)</a></li>
+                    <li><a href="#!">Skoda Octavia (2649)</a></li>
+                    <li><a href="#!">Opel Astra (2481)</a></li>
+                    <li><a href="#!">Volkswagen Passat (2473)</a></li>
+                    <li><a href="#!">Kia Rio (2384)</a></li>
+                    <li><a href="#!">Toyota Corolla (2253)</a></li>
+                    <li><a href="#!">Mitsubishi Lancer (2216)</a></li>
+                    <li><a href="#!">Daewoo Lanos (2186)</a></li>
+                    <li><a href="#!">Volkswagen Golf (2072)</a></li>
+                    <li><a href="#!">ВАЗ (Lada) Kalina (2062)</a></li>
+                </ul>
+            </div>
+            <div class="footer-section left">
+                <p class="footer__list-title">Розділи</p>
+                <ul class="footer-section-dop">
+                    <li><a href="#!">Люди</a></li>
+                    <li><a href="#!">Гаражі</a></li>
+                    <li><a href="#!">Каталог автомобілів</a></li>
+                    <li><a href="#!">Технічні характеристики</a></li>
+                    <li><a href="#!">Фото автомобілів</a></li>
+                    <li><a href="#!">Авто-журнал</a></li>
+                    <li><a href="#!">Відгуки</a></li>
+                    <li><a href="#!">Порівняння автомобілів</a></li>
+                    <li><a href="#!">Затрата палива автомобілів</a></li>
+                </ul>
+            </div>
+            <div class="footer-section left last">
+                <p class="footer__list-title">AutoHelper</p>
+                <ul class="footer-section-dop">
+                    <li><a href="#!">Головна</a></li>
+                    <li><a href="#!">Про проєкт</a></li>
+                    <li><a href="#!">Регістрація</a></li>
+                    <li><a href="#!">З чого почати?</a></li>
+                    <li><a href="#!">Партнерська программа</a></li>
+                    <li><a href="#!">Мобільний додаток</a></li>
+                    <li><a href="#!">Правила</a></li>
+                    <li><a href="#!">Блог</a></li>
+                    <li><a href="#!">Контакти</a></li>
+                    <li><a href="#!">Підтримати проєкт</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+			<button class="close-auth">&times;</button>
+			<form id="logInForm">
+				<fieldset class="modal-body">
+					<legend class="modal-title">Авторизация</legend>
+					<label class="label-auth">
+						<span>Логин</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Пароль</span>
+						<input id="password" type="password">
+					</label>
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button button-primary button-login" type="submit">Войти</button>
+					</div>
+				</div>
+			</form>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+    </div>
+    <script src="js\login.js"></script>
+</body>
+</html>

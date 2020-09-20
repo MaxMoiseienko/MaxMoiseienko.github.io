@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700i,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\header&footer.css">
+    <link rel="stylesheet" href="css\analizate.css">
+    <script>
+        window.devicePixelRatio = 4;
+      </script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+        <span class="logo header__logo"><a href="index.html" class="header__logo--link">AutoHelper</a></span>
+        <nav class="header__nav">
+        <ul class="header__nav__list">
+            <li href="#!" class="header__nav__link">
+                <a href="" class="header__nav__link--item">Функції</a>
+                <ul class="submenu">
+                    <li><a  class="submenu__item" href="calculator.html">Калькулятор палива</a></li>
+                    <li><a  class="submenu__item" href="analizate.html">Облік витрат</a></li>
+                    <li><a  class="submenu__item" href="statistik.html">Статистика</a></li>
+                 </ul>
+            </li>
+            <li href="#!" class="header__nav__link"><a href="index.html" class="header__nav__link--item--none">Головна</a></li>
+            <li href="#!" class="header__nav__link"><a href="kontakts.html" class="header__nav__link--item--none">Контакти</a></li>
+            <li href="#!" class="header__nav__link"><a href="pidtrimka.html" class="header__nav__link--item--none">Підтримка</a></li>
+            <li href="#!" class="header__nav__link"><a href="" class="header__nav__link--item--none">Ціни</a></li>
+        </ul>
+        </nav>
+        <div class="buttons">
+            <span class="user-name"></span>
+            <button class="button button-primary button-auth">
+                <span class="button-auth-svg"></span>
+                <span class="button-text">Войти</span>
+            </button>
+            <button class="button button-primary button-out">
+                <span class="button-text">Выйти</span>
+                <span class="button-out-svg"></span>
+            </button>
+        </div>
+    </div>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+        <div class="form__part">
+            <div class="field__container field1">
+                <div class="databuycar__input field1__input">
+                    <label for="">Рік придбання автомобіля</label>
+                    <div class="input__wrap">
+                    <input  placeholder="Обов'язково заповнити!"  class="input_value" type="number" data-placeholder="AAAA" id ="databuycarYear" min="1910" max="2020">
+                </div>
+                </div>
+                <div class="carcost__input field1__input">
+                    <label for="">Ринкова вартість автомобіля на момент придбання</label>
+                    <i>Якщо автомобіль новий, вкажіть ціну, за яку ви його придбали<br>Якщо автомобіль був у вжитку, вкажіть його ринкову вартість на момент придбання</i>
+                    <div class="input__wrap">
+                    <input placeholder="Обов'язково заповнити!" class="input_value" type="number"  id ="carcost" min="1" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+                <div class="carcostnow__input field1__input">
+                    <label for="">Ринкова вартість автомобіля на сьогодні</label>
+                    <i>Якщо продати автомобіль зараз, скільки ви за нього отримаєте?</i>
+                    <div class="input__wrap">
+                    <input placeholder="Обов'язково заповнити!" class="input_value" type="number"  id ="carcostnow" min="1" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+            </div>
+            <div class="field__container field2">
+                <div class="strahovka__input">
+                    <label for="">Страхування автомобіля і страхове покриття на випадок пошкоджень у дорозі за рік</label>
+                    <div class="input__wrap">
+                    <input class="input_value" type="number"  id ="strahovka" min="1" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+            </div>
+            <div class="field__container field3">
+
+                <div class="paluvo__input">
+                    <label for="">Бензин, дизельне пальне, газ, електрика</label>
+                    <i>За місяць</i>
+                    <div class="input__wrap">
+                    <input placeholder="Обов'язково заповнити!" class="input_value" type="number"  id ="paluvo" min="0" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="field__container field4">
+                <div class="stoyanka__input">
+                    <label for="">Середня вартість з урахуванням стоянки за місяць:</label>
+                    <i>паркометри у межах міста, оренда місця для паркування, підземна чи надземна стоянка у громадських будівлях, торгівельних центрах, аеропортах, на автобусних чи залізничних станціях чи інших об’єктах інфраструктури.</i>
+                    <div class="input__wrap">
+                    <input class="input_value" type="number"  id ="stoyanka" min="0" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="field__container field5">
+                <div class="shtraf__input">
+                    <label for="">Середня сума оплачених штрафів за рік:</label>
+                    <i>пригадайте, яку суму ви виплатили за останні декілька років у вигляді штрафів за порушення ПДР будь-якого виду </i>
+                    <div class="input__wrap">
+                    <input class="input_value" type="number"  id ="shtraf" min="0" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="field__container field6">
+                <div class="proizd__input">
+                    <label for="">Середня сума витрат на плату за проїзд на місяць</label>
+                    <i>мости, тунелі, автомагістралі і зони платного в’їзду у центрі міста</i>
+                    <div class="input__wrap">
+                    <input class="input_value" type="number"  id ="proizd" min="0" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="field__container field7">
+                <div class="remount__input">
+                    <label for="">Середня вартість ремонту та вдосконалень за рік:</label>
+                    <i>автозапчастини, модифікації, ремонт несправностей, вм’ятини, пошкодження в результаті зіткнення, тюнінг тощо.</i>
+                    <div class="input__wrap">
+                    <input placeholder="Обов'язково заповнити!" class="input_value" type="number"  id ="remount" min="0" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+                <div class="wash__input">
+                    <label for="">Середня вартість за мийку машини на місяць:</label>
+                    <i>Скільки ви віддаєте за мийку? Якщо миєте самі введіть 0</i>
+                    <div class="input__wrap">
+                    <input class="input_value" type="number"  id ="wash" min="0" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="field__container field8">
+                <div class="podatok__input">
+                    <label for="">Акциз (податок) на автомобіль</label>
+                    <i>Податок на ваш автомобіль:</i>
+                    <div class="input__wrap">
+                    <input class="input_value" type="number"  id ="podatok" min="0" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="field__container field9">
+                <div class="techvision__input">
+                    <label for="">Технічний огляд автомобіля (державний техогляд)</label>
+                    <i>Скільки разів ви здійснювали техогляд автомобіля?</i>
+                    <div class="input__wrap">
+                    <input class="input_value" type="number"  id ="techvision" min="0" >
+                    <span class="unit"></span>
+                    </div>
+                </div>
+                <div class="techvisioncost__input">
+                    <label for="">Середня вартість кожного техогляду</label>
+                    <div class="input__wrap">
+                    <input class="input_value" type="number"  id ="techvisioncost" min="0" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="field__container field10">
+                <div class="howbigfamily__input">
+                    <label for="">Громадський транспорт</label>
+                    <i>Скільки у вашій сім’ї є людей у віці від 4 років (разом із вами)?</i>
+                    <div class="input__wrap">
+                    <input class="input_value" type="number"  id ="howbigfamily" min="0" max = "20">
+                    </div>
+                </div>
+                <div class="anothertransport__input">
+                    <label for="">Яка середня вартість одного місячного абонементу на громадський транспорт, необхідний для звичайної щоденної діяльності кожного члена сім’ї</label>
+                    <i>Якщо ви не користуєтеся громадським транспортом, уведіть 0</i>
+                    <div class="input__wrap">
+                    <input class="input_value" type="number"  id ="anothertransport" min="0" >
+                    <span class="unit">грн</span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="field__container field11">
+                <div class="howmachride__input">
+                    <label for="">Відстань</label>
+                    <i>Відстань, яку ви проїздите автомобілем на місяць</i>
+                    <div class="input__wrap">
+                    <input  class="input_value" type="number"  id ="howmachride" min="0" max = "20">
+                    <span class="unit unit__special">км</span>
+                    </div>
+                </div>
+
+
+            </div>
+            <input type="button" id="calculate_costs_btn_g_captcha" class="button big btn-blue cursor_pointer" value="Обчислити витрати на автомобіль">
+        </div>
+        <div class="chart__part" style="display: none;">
+            <div class="charts">
+                <h1 class="chars__title">Графіки та інше</h1>
+                <div class="info__bloks">
+                    <div class="info__blok">
+                        <!-- <h3 class="">Витрати на ваш автомобіль</h3> -->
+                        <span class="total__cost"></span>
+                        <span class="">за рік</span>
+                    </div>
+                    <div class="info__blok">
+                        <span class="all__total__cost"></span>
+                        <span class="all__total__cost-sum"></span>
+                    </div>
+                </div>
+                <div class="chars__wrap">
+                    <h2 class="chars__container__title">Витрати на рік</h2>
+                    <div class="chars__container">
+
+                    <div class="one__chart">
+                        <div class="chart__item">
+                            <canvas id="costBarChart"  width="877" height="437"></canvas>
+                        </div>
+                    </div>
+                    <div class="second__chart">
+                        <div class="chart__item">
+                            <canvas id="costPieChart"  width="400" height="437"></canvas>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="thee__boxes">
+                    <div class="standing__cost-box box-item">
+                        <div class="title">
+                            <h3>Постійні витрати</h3>
+                            <span class="average_costs_per_type">на рік</span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Зниження вартості автомобіля</span>
+                            <span class="block__cost" id="costs1"></span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Страхування на випадок пошкоджень у дорозі</span>
+                            <span class="block__cost " id="costs2"></span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Технічний огляд автомобіля, державний огляд</span>
+                            <span class="block__cost" id="costs3"></span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Податок на автомобіль</span>
+                            <span class="block__cost " id="costs4"></span>
+                        </div>
+                        <div class="total-ammount"><h4>РАЗОМ</h4><span class="periodic_costs_total_costs"></span></div>
+
+                    </div>
+                    <div class="running__cost-box box-item">
+                        <div class="title">
+                            <h3>Експлуатаційні витрати</h3>
+                            <span class="average_costs_per_type">на рік</span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Пальне</span>
+                            <span class="block__cost" id="costs5"></span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Технічне обслуговування</span>
+                            <span class="block__cost" id="costs6"></span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Ремонт і вдосконалення</span>
+                            <span class="block__cost" id="costs7"></span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Стоянка</span>
+                            <span class="block__cost" id="costs8"></span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Плата за проїзд</span>
+                            <span class="block__cost" id="costs9"></span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Миття та чистка</span>
+                            <span class="block__cost" id="costs10" ></span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Штрафи за порушення ПДР</span>
+                            <span class="block__cost" id="costs11"></span>
+                        </div>
+
+
+
+                        <div class="total-ammount"><h4>РАЗОМ</h4><span class="running_total_costs"></span></div>
+                    </div>
+                    <div class="total__cost-box box-item">
+                        <div class="title">
+                            <h3>Загальні витрати</h3>
+                            <span class="average_costs_per_type">на рік</span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Постійні витрати</span>
+                            <span class="block__cost" id="costs12"></span>
+                        </div>
+                        <div class="block__item">
+                            <span class="block__desc">Експлуатаційні витрати</span>
+                            <span class="block__cost" id="costs13"></span>
+                        </div>
+                        <div class="total-ammount"><h4>РАЗОМ</h4><span class="total_costs"></span></div>
+
+                    </div>
+                </div>
+
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="box">
+            <div class="footer-section left">
+                <p class="footer__list-title">Популярні марки</p>
+                <ul>
+                    <li><a href="#!">Toyota (16620)</a></li>
+                    <li><a href="#!">ВАЗ (Lada) (16370)</a></li>
+                    <li><a href="#!">Volkswagen (10110)</a></li>
+                    <li><a href="#!">Hyundai (8809)</a></li>
+                    <li><a href="#!">Ford (8502)</a></li>
+                    <li><a href="#!">Kia (8413)</a></li>
+                    <li><a href="#!">Nissan (8361)</a></li>
+                    <li><a href="#!">Renault (7370)</a></li>
+                    <li><a href="#!">Mitsubishi (7124)</a></li>
+                    <li><a href="#!">Chevrolet (7028)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section left">
+                <p class="footer__list-title">Популярні моделі</p>
+                <ul>
+                    <li><a href="#!">Ford Focus (3661)</a></li>
+                    <li><a href="#!">Skoda Octavia (2649)</a></li>
+                    <li><a href="#!">Opel Astra (2481)</a></li>
+                    <li><a href="#!">Volkswagen Passat (2473)</a></li>
+                    <li><a href="#!">Kia Rio (2384)</a></li>
+                    <li><a href="#!">Toyota Corolla (2253)</a></li>
+                    <li><a href="#!">Mitsubishi Lancer (2216)</a></li>
+                    <li><a href="#!">Daewoo Lanos (2186)</a></li>
+                    <li><a href="#!">Volkswagen Golf (2072)</a></li>
+                    <li><a href="#!">ВАЗ (Lada) Kalina (2062)</a></li>
+                </ul>
+            </div>
+            <div class="footer-section left">
+                <p class="footer__list-title">Розділи</p>
+                <ul class="footer-section-dop">
+                    <li><a href="#!">Люди</a></li>
+                    <li><a href="#!">Гаражі</a></li>
+                    <li><a href="#!">Каталог автомобілів</a></li>
+                    <li><a href="#!">Технічні характеристики</a></li>
+                    <li><a href="#!">Фото автомобілів</a></li>
+                    <li><a href="#!">Авто-журнал</a></li>
+                    <li><a href="#!">Відгуки</a></li>
+                    <li><a href="#!">Порівняння автомобілів</a></li>
+                    <li><a href="#!">Затрата палива автомобілів</a></li>
+                </ul>
+            </div>
+            <div class="footer-section left last">
+                <p class="footer__list-title">AutoHelper</p>
+                <ul class="footer-section-dop">
+                    <li><a href="#!">Головна</a></li>
+                    <li><a href="#!">Про проєкт</a></li>
+                    <li><a href="#!">Регістрація</a></li>
+                    <li><a href="#!">З чого почати?</a></li>
+                    <li><a href="#!">Партнерська программа</a></li>
+                    <li><a href="#!">Мобільний додаток</a></li>
+                    <li><a href="#!">Правила</a></li>
+                    <li><a href="#!">Блог</a></li>
+                    <li><a href="#!">Контакти</a></li>
+                    <li><a href="#!">Підтримати проєкт</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+			<button class="close-auth">&times;</button>
+			<form id="logInForm">
+				<fieldset class="modal-body">
+					<legend class="modal-title">Авторизация</legend>
+					<label class="label-auth">
+						<span>Логин</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Пароль</span>
+						<input id="password" type="password">
+					</label>
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button button-primary button-login" type="submit">Войти</button>
+					</div>
+				</div>
+			</form>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="js\login.js"></script>
+    <script src="js\analizate.js"></script>
+</body>
+</html>

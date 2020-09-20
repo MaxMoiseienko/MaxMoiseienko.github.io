@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700i,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\header&footer.css">
+    <link rel="stylesheet" href="css\calculator.css">
+    <link rel="stylesheet" href="css\kontakts.css">
+    <script type="text/javascript" src="js\jquery.js"></script>
+    <script src="js\calc.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+        <span class="logo header__logo"><a href="index.html" class="header__logo--link">AutoHelper</a></span>
+        <nav class="header__nav">
+        <ul class="header__nav__list">
+            <li href="#!" class="header__nav__link">
+                <a href="" class="header__nav__link--item">Функції</a>
+                <ul class="submenu">
+                    <li><a  class="submenu__item" href="calculator.html">Калькулятор палива</a></li>
+                    <li><a  class="submenu__item" href="analizate.html">Облік витрат</a></li>
+                    <li><a  class="submenu__item" href="statistik.html">Статистика</a></li>
+                 </ul>
+            </li>
+            <li href="#!" class="header__nav__link"><a href="index.html" class="header__nav__link--item--none">Головна</a></li>
+            <li href="#!" class="header__nav__link"><a href="kontakts.html" class="header__nav__link--item--none">Контакти</a></li>
+            <li href="#!" class="header__nav__link"><a href="Pidtrimka.html" class="header__nav__link--item--none">Підтримка</a></li>
+            <li href="#!" class="header__nav__link"><a href="" class="header__nav__link--item--none">Ціни</a></li>
+        </ul>
+        </nav>
+        <div class="buttons">
+            <span class="user-name"></span>
+            <button class="button button-primary button-auth">
+                <span class="button-auth-svg"></span>
+                <span class="button-text">Войти</span>
+            </button>
+            <button class="button button-primary button-out">
+                <span class="button-text">Выйти</span>
+                <span class="button-out-svg"></span>
+            </button>
+        </div>
+    </div>
+    </header>
+
+    <div class="container">
+      <div style="text-align:center">
+        <h2></h2>
+        <p></p>
+      </div>
+      <div class="row">
+        <div class="column">
+
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <div class="whitebox-midd" >
+      <p><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Phr3fPhRyjIffbqMJTDZuDB1FYlFv_QT" width="660" height="480"></iframe></p>
+          </div>
+            <p><label for="fname">Вулиця Михайла Омеляновича-Павленка, 1, Київ, Пн-Сб 10:00-21:00</label></p>
+              <label for="country">Пошта для зв'язку:</label>
+            <select id="country" name="country">
+              <option value="australia">maxmoiseienko@gmail.com;</option>
+              <option value="canada">ntu.edu.ua@gmail.com</option>
+              <option value="usa">maxi_muss@ukr.net</option>
+            </select>
+            <label for="country">Номери телефонів:</label>
+            <select id="country" name="country">
+              <option value="australia">+380636177095</option>
+              <option value="canada">+380659265739</option>
+              <option value="usa">+380946375896</option>
+              <option value="usa">+380739509274</option>
+            </select>
+            <label for="subject">Запитайте нас</label>
+            <textarea id="subject" name="subject" placeholder="" style="height:120px"></textarea>
+            <input type="submit" value="Запитати">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Initialize Google Maps -->
+
+
+
+
+    </body>
+    </html>
+
+    <div class="modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+			<button class="close-auth">&times;</button>
+			<form id="logInForm">
+				<fieldset class="modal-body">
+					<legend class="modal-title">Авторизация</legend>
+					<label class="label-auth">
+						<span>Логин</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Пароль</span>
+						<input id="password" type="password">
+					</label>
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button button-primary button-login" type="submit">Войти</button>
+					</div>
+				</div>
+			</form>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+    </div>
+    <script src="js\login.js"></script>
+</body>
+</html>

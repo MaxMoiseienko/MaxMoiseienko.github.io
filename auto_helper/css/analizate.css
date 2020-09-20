@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgba(201, 199, 204, 0.849);
+    color: #000;
+
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* #databuycarYear #carcost #carcostnow #paluvo #remount{
+
+} */
+
+
+
+
+
+
+
+
+
+
+.field__container{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 27px 0 rgba(10, 9, 85, 0.856);
+    display: block;
+    text-align: left;
+     width: 700px;
+    height: auto; 
+}
+.field__container:nth-child(1){
+    margin-top: 100px;
+}
+label {
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    display: block;
+    clear: both;
+    margin-bottom: 15px;
+}
+input {
+    margin-top: 5px;
+    outline: none;
+    transition: ease-in-out,width .35s ease-in-out;
+    border: 0;
+    border-bottom: 1px solid #b0b2be;
+    color: black;
+    font-family: 'Nunito';
+    background: transparent;
+    font-size: 30px;
+}
+
+.form__part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.field1__input{
+    margin-top: 10px;
+  
+}
+.next{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 230px;
+}
+.btn-orange {
+    
+}
+.next__button{
+    background-color: #efa00b;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 10px;
+}
+.next__button:hover{
+    background-color: #e46f02;
+    cursor: pointer;
+}
+
+.next__active{
+    display: block;
+}
+#calculate_costs_btn_g_captcha{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#calculate_costs_btn_g_captcha:hover{
+    background-color: rgb(4, 1, 190);
+}
+#calculate_costs_btn_g_captcha:active{
+    background-color: rgb(4, 45, 99);
+}
+
+
+.charts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chars__title{
+    color: tomato;
+    color: violet;
+    color: royalblue;
+    color: springgreen;
+    color: purple;
+    color: orange;
+
+}
+.chars__container{
+    display: flex;
+}
+.info__bloks{
+    display: flex;
+
+}
+.info__blok{
+
+    display: flex;
+    margin-right: 30px;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 40px;
+    border: 4px solid #2c49b9;
+    color: #2c49b9;
+    flex-direction: column;
+    
+
+}
+.info__blok h3{
+    margin: 0;
+}
+.input__wrap{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  
+
+}
+.unit{
+    position: absolute;
+    color: rgb(131, 123, 123);
+    font-weight: 600;
+    font-size: 30px;
+    right: 200px;
+    bottom: 0;
+}
+.unit__special{
+    right: 470px;
+}
+
+
+
+
+
+
+
+
+
+#databuycarYear{
+    width: 300px;
+}
+
+.thee__boxes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    
+}
+.box-item{
+    padding: 5px 10px;
+    background-color: white;
+    width: 300px;
+   min-height: 240px;
+    margin-right: 40px;
+}
+.box-item{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 0 0 12px 0 rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 0 12px 0 rgba(0,0,0,0.05);
+    box-shadow: 0 0 27px 0 rgba(10, 9, 85, 0.856);
+
+}
+.title{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 10px solid #2c49b9;
+    margin: 10px 0;
+    text-align: left;
+    width: 99%;
+    padding: 3px 0;
+}
+.title span{
+ 
+}
+.box-item:nth-child(2) .title{
+    border-left: 10px solid #05f54d;
+
+}
+.box-item:nth-child(3) .title{
+    border-left: 10px solid #e5f505;
+    
+
+}
+.box-item:nth-child(3) .block__desc{
+    color: black;
+   
+
+}
+
+
+
+
+
+.block__item{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: left;
+    width: 97%;
+    padding: 3px 0;
+
+}
+.block__desc{   
+     color: #2c49b9;
+    float: left;
+    max-width: 70%;
+    padding-left: 15px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+.block__cost{
+    font-size: 14px;
+    color: black;
+    display: inline-block;
+    float: right;
+
+}
+.total-ammount{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.total__cost{
+    font-size: 40px;
+}
+
+.footer{
+    margin-top: 50px;
+}
